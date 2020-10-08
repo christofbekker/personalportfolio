@@ -13,23 +13,28 @@
                 width: 100%;
             }
         </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
     <h1>Welcome to my Google Maps API. This map shows my address.</h1>
+    <div class="apis">
     <div id="map"></div>
-    <script>
-        function initMap() {
-            var location = {lat: -26.696694, lng: 27.088303};
-            var map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 4,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location, 
-                map: map
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQWwW4cOs71_SF_K0VIXv9VYEnZqGQizc&callback=initMap"></script>
+        <script>
+            function initMap() {
+                var location = {lat: -26.696694, lng: 27.088303};
+                var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 4,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location, 
+                    map: map
+                });
+            }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQWwW4cOs71_SF_K0VIXv9VYEnZqGQizc&callback=initMap"></script>
+        <h1><br>Welcome to my Twitter API. This feed shows my universities official twitter page</h1>
+        <a class="twitter-timeline" href="https://twitter.com/theNWU?ref_src=twsrc%5Etfw">Tweets by theNWU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>  
     </body>
 </html>

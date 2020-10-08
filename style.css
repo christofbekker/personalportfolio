@@ -328,3 +328,9 @@ img {
     text-align: center;
     padding: 10px;
 }
+
+.apis {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
